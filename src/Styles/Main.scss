@@ -1,0 +1,94 @@
+@import "./Variables.scss";
+.motos{
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: initial;
+    padding-bottom: .1rem;
+    padding: 1.3rem;
+    li{
+        flex: 0 0 30%;
+        scroll-snap-align: start;
+        text-align: center;
+        font-weight: $font-semi-bold;
+        .add{
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            font-size: x-large;
+            color: rgb(107, 223, 18);
+        }
+        .img{
+            border: none;
+            &:hover{
+                background-color: transparent;
+            }
+            img{
+                aspect-ratio: 16 / 9;
+            object-fit: cover;
+            width: 40rem;
+            filter: drop-shadow(1px 1px .09rem rgb(112, 112, 112));
+            transition: all .3s;
+            &:hover{
+                scale: 1.04;
+                transition: all .15s;
+                filter: drop-shadow(1px 1px .2rem rgb(158, 158, 158));
+            }
+            }  
+        }
+    }
+}
+.cart{
+    div{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        li{
+            flex: 0 0 5%;
+            border: .1rem solid #fff;
+            padding: 2rem;
+            div{
+                display: grid;
+                place-items: center;
+            }
+        }
+    }
+}
+.form{
+    display: grid;
+    place-items: center;
+    margin-bottom: 2rem;
+    h2{
+        margin: 1rem;
+    }
+    form{
+        display: grid;
+        place-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        input{
+            max-width: 18rem;
+            background-color: transparent;
+            border: 0;
+            border-bottom: .1rem solid rgba(255, 255, 255, 0.1);
+            font-size: 1rem;
+            padding: .1rem;
+            text-align: center;
+        }
+    }
+}
+.main{
+    display: grid;
+    place-items: center;
+}
+
+@media screen and (max-width: 768px){
+    .motos{
+        li{
+            flex: 0 0 85%;
+        }
+    }
+}
