@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/motoland-redux/static/css/main.0073f450.css",
+    "main.js": "/motoland-redux/static/js/main.88de188b.js",
+    "index.html": "/motoland-redux/index.html",
+    "main.0073f450.css.map": "/motoland-redux/static/css/main.0073f450.css.map",
+    "main.88de188b.js.map": "/motoland-redux/static/js/main.88de188b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0073f450.css",
+    "static/js/main.88de188b.js"
+  ]
+}
